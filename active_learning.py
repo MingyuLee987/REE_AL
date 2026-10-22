@@ -20,18 +20,22 @@ NUM = 'C Si Mn P S Cr Ni Mo Cu N RE_ppm temperature_C pH exposure_h scan_rate_mV
 CAT = ['RE_element_cat', 'electrolyte_condition_cat', 'steel_family']
 PHASE = [f'{p}_fraction_pct' for p in ['austenite', 'ferrite', 'martensite', 'bainite', 'pearlite']]
 DEFAULT = 'rare_earth_steel_single_sheet_sources.xlsx'
+PROCESS_NUM = ['heat_treatment_temperature_C', 'heat_treatment_time_min',
+               'ocp_stabilization_min', 'pH_lower_bound',
+               'P_upper_bound_wt_pct', 'S_upper_bound_wt_pct']
+PROCESS_CAT = ['sample_process_cat', 'sample_region_cat', 'temperature_condition_cat']
 
 
 def load(path, sheet='ENRICHED_DATA'):
-    d = pd.read_csv(path) if Path(path).suffix.lower() == '.csv' else pd.read_excel(path, sheet_name=sheet)
+    d = pd.read_csv(path, float_precision='round_trip') if Path(path).suffix.lower() == '.csv' else pd.read_excel(path, sheet_name=sheet)
     if 'record_id' not in d or d.record_id.isna().any() or d.record_id.duplicated().any():
         raise ValueError('record_id must be present, nonempty and unique.')
     return d.reset_index(drop=True)
 
 
-def features(d, phase=False):
-    nums = NUM + (PHASE if phase else [])
-    cats = CAT + (['matrix_phase_group'] if phase else [])
+def features(d, phase=False, process=False):
+    nums = NUM + (PHASE if phase else []) + (PROCESS_NUM if process else [])
+    cats = CAT + (['matrix_phase_group'] if phase else []) + (PROCESS_CAT if process else [])
     missing = set(nums + cats) - set(d.columns)
     if missing:
         raise ValueError(f'Missing feature columns: {sorted(missing)}')
@@ -81,7 +85,7 @@ def select(mu, sigma, n, strategy, beta, rng):
 def simulate(d, args, out):
     if 'source_paper_id' not in d or d.source_paper_id.isna().any() or d.source_paper_id.nunique() < 2:
         raise ValueError('Simulation needs at least two nonmissing source_paper_id groups.')
-    x, nums, cats = features(d, args.with_phase)
+    x, nums, cats = features(d, args.with_phase, getattr(args, 'with_process', False))
     y = labels(d)
     rows, queries, splits = [], [], []
     for seed in args.seeds:
@@ -122,8 +126,8 @@ def recommend(d, args, out):
         raise ValueError('Candidate record_id overlaps training records.')
     if TARGET in c and c[TARGET].notna().any():
         raise ValueError('Candidates must have blank targets (unmeasured experiments).')
-    x, nums, cats = features(d, args.with_phase)
-    cx, _, _ = features(c, args.with_phase)
+    x, nums, cats = features(d, args.with_phase, getattr(args, 'with_process', False))
+    cx, _, _ = features(c, args.with_phase, getattr(args, 'with_process', False))
     # Reject repeats of measured conditions and collapse identical candidate inputs.
     # Normalize serialization roundoff (CSV vs XLSX) for condition comparison.
     fingerprints = pd.util.hash_pandas_object(x.round(10), index=False)
@@ -158,6 +162,7 @@ def main():
     p.add_argument('--batch-size', type=int, default=5)
     p.add_argument('--beta', type=float, default=1.0)
     p.add_argument('--with-phase', action='store_true')
+    p.add_argument('--with-process', action='store_true', help='Use source-reviewed process/condition columns from curated data.')
     p.add_argument('--candidates')
     p.add_argument('--strategy', choices=['random', 'uncertainty', 'lcb'], default='uncertainty')
     args = p.parse_args()

@@ -1,0 +1,5 @@
+{
+  "model": "vae",
+  "params": {"latent_dim": 4, "supervised_weight": 0.0},
+  "features": "physical"
+}

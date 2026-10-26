@@ -1,0 +1,109 @@
+{
+  "protocol": "Outer random 5-fold seed42, inner random 3-fold seed71; train-only ranking and preprocessing; k chosen by inner MAE; fixed downstream SVR",
+  "methods": [
+    "tree_importance",
+    "tree_SHAP",
+    "Lasso",
+    "mutual_information"
+  ],
+  "k": [
+    10,
+    20,
+    40,
+    80,
+    "all"
+  ],
+  "shap_version": "0.54.1",
+  "shap_model": "ExtraTrees selector, NOT SVR",
+  "results": [
+    {
+      "method": "Lasso",
+      "min_features": 40,
+      "max_features": 180,
+      "mean_fold_r2": 0.7482704632071645,
+      "sd_fold_r2": 0.02656582666643738,
+      "n": 377,
+      "r2_log10": 0.7499046761098558,
+      "mae_log10": 0.40227599344683035,
+      "rmse_log10": 0.6315956853909034,
+      "geometric_mean_fold_error": 2.525084950137098,
+      "fraction_within_factor2": 0.5755968169761273,
+      "r2_raw": 0.30746989062274754
+    },
+    {
+      "method": "full",
+      "min_features": 176,
+      "max_features": 180,
+      "mean_fold_r2": 0.7556949563559118,
+      "sd_fold_r2": 0.01224466028967845,
+      "n": 377,
+      "r2_log10": 0.75654691695864,
+      "mae_log10": 0.3895781972375276,
+      "rmse_log10": 0.6231520213335495,
+      "geometric_mean_fold_error": 2.4523259695578203,
+      "fraction_within_factor2": 0.596816976127321,
+      "r2_raw": 0.4390567406516268
+    },
+    {
+      "method": "inner_selected_method",
+      "min_features": 80,
+      "max_features": 80,
+      "mean_fold_r2": 0.758940251550475,
+      "sd_fold_r2": 0.013302405247998344,
+      "n": 377,
+      "r2_log10": 0.7594892228651524,
+      "mae_log10": 0.38072895081721564,
+      "rmse_log10": 0.6193749539307631,
+      "geometric_mean_fold_error": 2.40286267215856,
+      "fraction_within_factor2": 0.6206896551724138,
+      "r2_raw": 0.5099574658718227
+    },
+    {
+      "method": "mutual_information",
+      "min_features": 40,
+      "max_features": 80,
+      "mean_fold_r2": 0.7444331805294032,
+      "sd_fold_r2": 0.04264376056210788,
+      "n": 377,
+      "r2_log10": 0.7460041070774619,
+      "mae_log10": 0.39791373083225245,
+      "rmse_log10": 0.6365019167562338,
+      "geometric_mean_fold_error": 2.49984873717086,
+      "fraction_within_factor2": 0.5888594164456233,
+      "r2_raw": 0.3176878589344847
+    },
+    {
+      "method": "tree_SHAP",
+      "min_features": 40,
+      "max_features": 80,
+      "mean_fold_r2": 0.7532979293927999,
+      "sd_fold_r2": 0.02873062161636558,
+      "n": 377,
+      "r2_log10": 0.7549651444820147,
+      "mae_log10": 0.3861772663560417,
+      "rmse_log10": 0.6251731270577041,
+      "geometric_mean_fold_error": 2.4331969665319364,
+      "fraction_within_factor2": 0.6153846153846154,
+      "r2_raw": 0.6383187394447456
+    },
+    {
+      "method": "tree_importance",
+      "min_features": 80,
+      "max_features": 80,
+      "mean_fold_r2": 0.7535382956126325,
+      "sd_fold_r2": 0.026440617751291473,
+      "n": 377,
+      "r2_log10": 0.7550382459793128,
+      "mae_log10": 0.3876964186798575,
+      "rmse_log10": 0.6250798658345535,
+      "geometric_mean_fold_error": 2.441723138245938,
+      "fraction_within_factor2": 0.6153846153846154,
+      "r2_raw": 0.5014788516445194
+    }
+  ],
+  "final_method": "mutual_information",
+  "final_k": "80",
+  "final_features": 80,
+  "production_model_changed": false,
+  "warning": "Development comparison on previously examined data. Random split can share source papers. Comparing outer scores to choose a winner is exploratory; inner_selected_method is the nested automatic method-selection procedure."
+}

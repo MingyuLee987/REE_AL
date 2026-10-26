@@ -1,0 +1,40 @@
+{
+  "protocol": "Outer random 5-fold seed42; inner random 3-fold seed71; ExtraTrees ranking; k selected by inner MAE; fixed SVR; fold-local preprocessing",
+  "candidate_k": [
+    10,
+    20,
+    40,
+    80,
+    "all"
+  ],
+  "results": [
+    {
+      "model": "full",
+      "mean_fold_r2": 0.7556949563559118,
+      "sd_fold_r2": 0.01224466028967845,
+      "n": 377,
+      "r2_log10": 0.75654691695864,
+      "mae_log10": 0.3895781972375276,
+      "rmse_log10": 0.6231520213335495,
+      "geometric_mean_fold_error": 2.4523259695578203,
+      "fraction_within_factor2": 0.596816976127321,
+      "r2_raw": 0.4390567406516268
+    },
+    {
+      "model": "selected",
+      "mean_fold_r2": 0.7535382956126325,
+      "sd_fold_r2": 0.026440617751291473,
+      "n": 377,
+      "r2_log10": 0.7550382459793128,
+      "mae_log10": 0.3876964186798575,
+      "rmse_log10": 0.6250798658345535,
+      "geometric_mean_fold_error": 2.441723138245938,
+      "fraction_within_factor2": 0.6153846153846154,
+      "r2_raw": 0.5014788516445194
+    }
+  ],
+  "final_k": "80",
+  "final_encoded_features": 80,
+  "production_model_changed": false,
+  "warning": "Development comparison, not fresh blind validation. Random folds may share source papers. Encoded features are not original experimental variables."
+}

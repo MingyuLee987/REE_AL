@@ -1,0 +1,30 @@
+{
+  "model": "Environment SVR with bootstrap uncertainty",
+  "central": {
+    "C": 10.0,
+    "epsilon": 0.15,
+    "kernel": "rbf",
+    "gamma": "scale"
+  },
+  "bootstrap_members": 15,
+  "seed": 42,
+  "training_rows": 279,
+  "training_papers": 43,
+  "uses_phase_fractions": false,
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "openpyxl": "3.1.5",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2"
+  },
+  "model_sha256": "716884026724c425e9c003f9517497aaf116c98f6ceed2e23df8250c744ef4f4",
+  "training_sha256": "f8ad6c03486d960605c9883acb8332e5ec02ce8f691335d7fbc498a7a2daf101",
+  "migration": {
+    "previous_model_sha256": "7406b8d52df538b1fdd7c40fa2c4650269afa73e02c142c62757bf66bef4a482",
+    "weights_changed": false,
+    "max_prediction_difference": 0.0,
+    "archive": "C:\\Users\\user\\OneDrive - postech.ac.kr\\\ubc14\ud0d5 \ud654\uba74\\REE_AL_archive\\20261022_cleanup"
+  }
+}

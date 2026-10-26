@@ -1,0 +1,44 @@
+{
+  "input_guideline": "C:\\Users\\user\\OneDrive - postech.ac.kr\\\ubc14\ud0d5 \ud654\uba74\\\ub370\uc774\ud130 \uc218\uc9d1 \ubc29\ubc95\\\ubb38\ud5cc\ub370\uc774\ud130_\uc218\uc9d1\uacfc\uc815_\uc815\ub9ac_\uc870\uc131\ubcf4\uc644_\uac1c\uc815\ubcf8.pdf",
+  "input_guideline_sha256": "69fd863229ca9733f18b3a74b0d5c111dae021fae9956474d0e3c613112407e6",
+  "outputs": {
+    "best_model\\data\\expanded\\author_hku_275.csv": "6c9a59021fe6978795928376cb99fe59212bdc82598d8dd9c1064b152fe029fa",
+    "best_model\\data\\expanded\\author_rebar_216.csv": "ccd8a83309c217fdcefb0d4ccfa7ef37eb4a59e52a5ba092255b25f5be3e74a1",
+    "best_model\\data\\expanded\\checked_measurements.csv": "cc21e3d8007f69f26e4fffec967049761329ef3aabe03b62c3eacb3fcc2d2ff8",
+    "best_model\\data\\expanded\\fulltext_inventory.csv": "70a771c30e29f688865af1178d628e6d607c4e2505a7a76872f67f3b3b391dd3",
+    "best_model\\data\\expanded\\hku_transformed_535_not_merged.csv": "a389c1c5e29f7b491bdcc13d1d741cb8f77612dea3c2b463b7db32a3d0beab87",
+    "best_model\\data\\expanded\\icorr_candidates.csv": "2a3c3b5768f2f4bd10f88d5ea6efff98f445280ed855f414a3ffe5eaf9f63459",
+    "best_model\\data\\expanded\\paper_search_inventory.csv": "2f86e6ca7e15956ee137dc6f13fb7ed8f1a52f7364ffa87dfb65a2c782b9c7ae",
+    "best_model\\data\\expanded\\reviewed_alloy_examples_12.csv": "d1a8aac5da82ea5d12f44a0ec3660685959d23a254a80248a6d6d5bf5754b282",
+    "best_model\\data\\expanded\\table_inventory.csv": "110124f47e5e5aa81b1c874e5439c9deb3376dd8ed6a221d2181ff7a3c8ef0ee"
+  },
+  "original_training_sha256": "72a81a3bb5e3b31083d0f5f66b515b99e9e3160637e98845af169a47a3332c8c",
+  "api_keys_logged": false,
+  "openai_api_called": false,
+  "summary": {
+    "checked_measurements": 503,
+    "rebar_author_measurements": 216,
+    "hku_raw_measurements": 275,
+    "reviewed_alloy_examples": 12,
+    "transformed_hku_not_merged": 535,
+    "machine_candidates": 4648,
+    "candidate_papers": 456,
+    "candidate_known_units": 4108,
+    "existing_training_paper_candidates": 19,
+    "training_data_changed": false,
+    "important": "Checked records include environmental-only data, partial compositions and interval representatives; not all immediately usable in existing alloy model. No unspecified RE content filled with zero; transformed and overlapping datasets not merged.",
+    "metadata_records": 4050,
+    "fulltext_papers": 880,
+    "fulltexts_with_icorr_tables": 524,
+    "source_group_policy": "HKU chapters share one group; repeated measurements stay with original paper",
+    "fulltext_papers_with_doi": 879
+  },
+  "collection_date": "2026-10-22",
+  "workbook_sha256": "d88a992af7307e45a3e23d4e69a5a564e33cea8e405fa6215d93a5131073ac91",
+  "checks": [
+    "16 unit tests passed",
+    "saved workbook row counts and all checked/candidate target values reconciled at relative tolerance 1e-12",
+    "original training hash unchanged",
+    "no API credentials found in collected data"
+  ]
+}

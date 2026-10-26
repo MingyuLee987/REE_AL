@@ -1,0 +1,229 @@
+{
+  "denominator": "CSV rows before runtime statistical imputation; populated values may include earlier composition estimates",
+  "scenarios": [
+    {
+      "pool": "existing_only",
+      "scope": "individual",
+      "rows": 279,
+      "available_rows": 17,
+      "missing_rows": 262,
+      "missing_percent": 93.9068,
+      "coverage_percent": 6.0932,
+      "conceptual_pool_only_not_merged": false
+    },
+    {
+      "pool": "existing_only",
+      "scope": "individual_and_group",
+      "rows": 279,
+      "available_rows": 21,
+      "missing_rows": 258,
+      "missing_percent": 92.4731,
+      "coverage_percent": 7.5269,
+      "conceptual_pool_only_not_merged": false
+    },
+    {
+      "pool": "existing_only",
+      "scope": "any_numeric_or_bound_information",
+      "rows": 279,
+      "available_rows": 22,
+      "missing_rows": 257,
+      "missing_percent": 92.1147,
+      "coverage_percent": 7.8853,
+      "conceptual_pool_only_not_merged": false
+    },
+    {
+      "pool": "plus_Tafel_only",
+      "scope": "individual",
+      "rows": 295,
+      "available_rows": 33,
+      "missing_rows": 262,
+      "missing_percent": 88.8136,
+      "coverage_percent": 11.1864,
+      "conceptual_pool_only_not_merged": true
+    },
+    {
+      "pool": "plus_Tafel_only",
+      "scope": "individual_and_group",
+      "rows": 295,
+      "available_rows": 37,
+      "missing_rows": 258,
+      "missing_percent": 87.4576,
+      "coverage_percent": 12.5424,
+      "conceptual_pool_only_not_merged": true
+    },
+    {
+      "pool": "plus_Tafel_only",
+      "scope": "any_numeric_or_bound_information",
+      "rows": 295,
+      "available_rows": 38,
+      "missing_rows": 257,
+      "missing_percent": 87.1186,
+      "coverage_percent": 12.8814,
+      "conceptual_pool_only_not_merged": true
+    },
+    {
+      "pool": "plus_all_methods_separately",
+      "scope": "individual",
+      "rows": 300,
+      "available_rows": 38,
+      "missing_rows": 262,
+      "missing_percent": 87.3333,
+      "coverage_percent": 12.6667,
+      "conceptual_pool_only_not_merged": true
+    },
+    {
+      "pool": "plus_all_methods_separately",
+      "scope": "individual_and_group",
+      "rows": 300,
+      "available_rows": 42,
+      "missing_rows": 258,
+      "missing_percent": 86.0,
+      "coverage_percent": 14.0,
+      "conceptual_pool_only_not_merged": true
+    },
+    {
+      "pool": "plus_all_methods_separately",
+      "scope": "any_numeric_or_bound_information",
+      "rows": 300,
+      "available_rows": 43,
+      "missing_rows": 257,
+      "missing_percent": 85.6667,
+      "coverage_percent": 14.3333,
+      "conceptual_pool_only_not_merged": true
+    }
+  ],
+  "existing_feature_missingness": [
+    {
+      "feature": "C",
+      "observed_or_filled_rows": 175,
+      "missing_rows": 104,
+      "missing_percent": 37.276
+    },
+    {
+      "feature": "Si",
+      "observed_or_filled_rows": 139,
+      "missing_rows": 140,
+      "missing_percent": 50.1792
+    },
+    {
+      "feature": "Mn",
+      "observed_or_filled_rows": 140,
+      "missing_rows": 139,
+      "missing_percent": 49.8208
+    },
+    {
+      "feature": "P",
+      "observed_or_filled_rows": 186,
+      "missing_rows": 93,
+      "missing_percent": 33.3333
+    },
+    {
+      "feature": "S",
+      "observed_or_filled_rows": 220,
+      "missing_rows": 59,
+      "missing_percent": 21.147
+    },
+    {
+      "feature": "Cr",
+      "observed_or_filled_rows": 236,
+      "missing_rows": 43,
+      "missing_percent": 15.4122
+    },
+    {
+      "feature": "Ni",
+      "observed_or_filled_rows": 196,
+      "missing_rows": 83,
+      "missing_percent": 29.7491
+    },
+    {
+      "feature": "Mo",
+      "observed_or_filled_rows": 174,
+      "missing_rows": 105,
+      "missing_percent": 37.6344
+    },
+    {
+      "feature": "Cu",
+      "observed_or_filled_rows": 131,
+      "missing_rows": 148,
+      "missing_percent": 53.0466
+    },
+    {
+      "feature": "N",
+      "observed_or_filled_rows": 151,
+      "missing_rows": 128,
+      "missing_percent": 45.8781
+    },
+    {
+      "feature": "RE_ppm",
+      "observed_or_filled_rows": 271,
+      "missing_rows": 8,
+      "missing_percent": 2.8674
+    },
+    {
+      "feature": "RE_element_cat",
+      "observed_or_filled_rows": 265,
+      "missing_rows": 14,
+      "missing_percent": 5.0179
+    },
+    {
+      "feature": "temperature_C",
+      "observed_or_filled_rows": 174,
+      "missing_rows": 105,
+      "missing_percent": 37.6344
+    },
+    {
+      "feature": "pH",
+      "observed_or_filled_rows": 103,
+      "missing_rows": 176,
+      "missing_percent": 63.0824
+    },
+    {
+      "feature": "exposure_h",
+      "observed_or_filled_rows": 203,
+      "missing_rows": 76,
+      "missing_percent": 27.2401
+    },
+    {
+      "feature": "scan_rate_mV_s",
+      "observed_or_filled_rows": 183,
+      "missing_rows": 96,
+      "missing_percent": 34.4086
+    },
+    {
+      "feature": "electrolyte_condition_cat",
+      "observed_or_filled_rows": 277,
+      "missing_rows": 2,
+      "missing_percent": 0.7168
+    },
+    {
+      "feature": "heat_treatment_temperature_C",
+      "observed_or_filled_rows": 76,
+      "missing_rows": 203,
+      "missing_percent": 72.7599
+    },
+    {
+      "feature": "heat_treatment_time_min",
+      "observed_or_filled_rows": 76,
+      "missing_rows": 203,
+      "missing_percent": 72.7599
+    },
+    {
+      "feature": "ocp_stabilization_min",
+      "observed_or_filled_rows": 30,
+      "missing_rows": 249,
+      "missing_percent": 89.2473
+    },
+    {
+      "feature": "grain_size_um",
+      "observed_or_filled_rows": 17,
+      "missing_rows": 262,
+      "missing_percent": 93.9068
+    }
+  ],
+  "extra_pair_rows": 21,
+  "extra_distinct_material_conditions": 16,
+  "extra_composition_columns_extracted": false,
+  "group_values_not_individual_measurements": true,
+  "bound_not_exact_value": true,
+  "model_retrained": false
+}

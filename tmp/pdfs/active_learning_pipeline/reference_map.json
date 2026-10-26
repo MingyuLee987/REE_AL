@@ -1,0 +1,62 @@
+[
+  [
+    "1",
+    "Wang, Y., et al. (2022). Integrated High-Throughput and Machine Learning Methods to Accelerate Discovery of Molten Salt Corrosion-Resistant Alloys. Advanced Science, 9, 2200370.",
+    "10.1002/advs.202200370",
+    "첨부 도식과 대응하는 제작·용융염 시험·자동 분석·물리 descriptor·ML 통합 연구. 이를 직접적인 icorr active learning 검증으로 인용하지 않는다. 용융염 결과와 수용액 icorr는 구별한다."
+  ],
+  [
+    "2",
+    "Lookman, T.; Balachandran, P. V.; Xue, D.; Yuan, R. (2019). Active learning in materials science with emphasis on adaptive sampling using uncertainties for targeted design. npj Computational Materials, 5, 21.",
+    "10.1038/s41524-019-0153-8",
+    "불확실성·utility function을 이용한 순차 후보 선택의 방법론 근거. 예측 학습과 목표 물성 최적화의 선택 목적을 구별할 때 참고."
+  ],
+  [
+    "3",
+    "Venkatraman, A., et al. (2024). An active learning framework for the rapid assessment of galvanic corrosion. npj Materials Degradation, 8, 54.",
+    "10.1038/s41529-024-00476-4",
+    "부식 분야의 acquisition 기반 순차 학습 사례. FE 시뮬레이션과 실험 경계조건을 사용한 갈바닉 전류 모델로, 사용자의 직접 Tafel icorr 실험과 동일한 측정 체계는 아니다."
+  ],
+  [
+    "4",
+    "Cai et al. (2025). A process-synergistic active learning framework for high-strength Al-Si alloys design. npj Computational Materials, 11, 228.",
+    "10.1038/s41524-025-01721-3",
+    "후보 합금 선택·실험 검증·데이터 반영을 반복하는 실험 연계 사례. 목표는 Al-Si 강도이며 부식 성능의 직접 증거는 아니다. 본 계획의 3조건 batch와 동일 설계라고 주장하지 않는다."
+  ],
+  [
+    "5",
+    "Dong, Z., et al. (2024). Machine learning-based corrosion rate prediction of steel embedded in soil. Scientific Reports, 14, 18194.",
+    "10.1038/s41598-024-68562-w",
+    "1428건 무작위 80:20 분리와 RF/SVR/MLP 비교 사례. 외부 논문 검증이 모든 부식 AI 연구의 필수 형식은 아니라는 구분에 사용. 토양/LPR 조건은 본 수용액 자료와 다르다."
+  ],
+  [
+    "6",
+    "Ghorbani, M.; Li, Z.; Pasquini, A.; Vasa, R.; Birbilis, N. (2025). Supervised machine learning for corrosion assessment of multi-principal element alloys using experimental and generative datasets. npj Materials Degradation, 9, 155.",
+    "10.1038/s41529-025-00700-9",
+    "문헌 기반 부식 물성과 여러 회귀모델의 train/test 비교 사례. icorr·Ecorr·Epit를 다룬다고 Ecorr를 측정 전 icorr의 필수 입력으로 써야 한다는 뜻은 아니다. GAN은 본 계획에 적용하지 않음."
+  ],
+  [
+    "7",
+    "Chen, Q.; Cai, Y.; Zhu, Y.; Ji, H.; Ma, X.; Wang, H. (2025). An Integrated Approach Using GA-XGBoost and GMM-RegGAN for Marine Corrosion Prediction Under Small Sample Size. Materials, 18, 3760.",
+    "10.3390/ma18163760",
+    "80:20 평가와 최적화 중 5fold CV/RMSE의 구분에 참고. 합성 자료 증강과 직접 실험을 추가하는 active learning은 다른 절차다. 본 보고서는 GA·GAN을 실행하지 않음."
+  ],
+  [
+    "8",
+    "G. Narasinga Rao et al. (2025). Effect of Aging Duration on the Microstructure and Corrosion Characteristics of 17-4 PH Stainless Steel. Procedia Structural Integrity, 71, 317-324.",
+    "10.1016/j.prostr.2025.08.043",
+    "기존 외부 개발 검증의 원문. Table 2의 1040도 용체화/480도 시효, Table 3의 icorr 평균 사용. 이미 결과를 확인한 자료이며 사용자의 새 실험 결과가 아님."
+  ],
+  [
+    "9",
+    "Kerbout et al. (2025). Influence of Selective Laser Melting Process and Heat Treatment Parameters on the Corrosion Resistance of 17-4 Precipitation Hardening Stainless Steel. Metals, 15, 232.",
+    "10.3390/met15030232",
+    "현재 문헌 자료의 9조건 출처. 용체화/시효와 레이저 출력·속도가 달라지는 SLM 실험이므로, 압연재와 같은 공정 자료로 취급하지 않는다."
+  ],
+  [
+    "10",
+    "Szewczyk-Nykiel et al. (2017). Effect of Aging Temperature on Corrosion Behavior of Sintered 17-4 PH Stainless Steel in Dilute Sulfuric Acid Solution. Journal of Materials Engineering and Performance, 26, 3450-3456.",
+    "10.1007/s11665-017-2778-4",
+    "현재 단계별 정리 자료의 6조건 출처. 분말소결·황산 환경이며 NaCl 압연재와 구별."
+  ]
+]

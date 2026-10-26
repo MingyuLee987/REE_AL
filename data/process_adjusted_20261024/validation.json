@@ -1,0 +1,15 @@
+{
+  "raw_rows": 385,
+  "target_verified_rows": 377,
+  "focused_rows": 15,
+  "focused_papers": 2,
+  "SLM_NaCl_rows": 9,
+  "sintered_acid_rows": 6,
+  "confirmed_rolled_17_4PH_NaCl_training_rows": 0,
+  "external_development_rows": 5,
+  "structured_process_stage_rows": 57,
+  "planned_unmeasured_rows": 12,
+  "existing_targets_unchanged": true,
+  "source_sha256": "6d2c1530cca3beba20ec4c68fa5c940e0abd27dd7c7e810c1dadf91548f5418f",
+  "model_retrained": false
+}

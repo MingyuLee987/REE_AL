@@ -1,0 +1,57 @@
+{
+  "original_rows": 45,
+  "added_rows": 192,
+  "expanded_rows": 237,
+  "expanded_papers": 46,
+  "new_papers": 34,
+  "screened_new_papers": 73,
+  "checked_target_and_heat_rows": 218,
+  "core_conditions_complete_review_rows": 85,
+  "core_conditions_complete_papers": 13,
+  "all_selected_predictors_present_rows": 0,
+  "missing_temperature_time_rows": 19,
+  "missing_temperature_time_pct": 8.02,
+  "legacy_unverified_targets": 8,
+  "statistically_imputed_cells": 640,
+  "fold_checks": [
+    {
+      "fold": 0,
+      "held_out_papers": 9,
+      "test_rows": 48,
+      "no_held_out_donors": true
+    },
+    {
+      "fold": 1,
+      "held_out_papers": 9,
+      "test_rows": 48,
+      "no_held_out_donors": true
+    },
+    {
+      "fold": 2,
+      "held_out_papers": 9,
+      "test_rows": 47,
+      "no_held_out_donors": true
+    },
+    {
+      "fold": 3,
+      "held_out_papers": 9,
+      "test_rows": 47,
+      "no_held_out_donors": true
+    },
+    {
+      "fold": 4,
+      "held_out_papers": 10,
+      "test_rows": 47,
+      "no_held_out_donors": true
+    }
+  ],
+  "model_retrained": false,
+  "source_target_never_imputed": true,
+  "test_temperature_information_missing_rows": 56,
+  "new_rows_with_explicit_positive_RE_ppm": 2,
+  "previous_expanded_rows": 179,
+  "added_this_round_rows": 58,
+  "added_this_round_papers": 7,
+  "added_this_round_positive_RE_rows": 0,
+  "previous_targets_preserved": true
+}

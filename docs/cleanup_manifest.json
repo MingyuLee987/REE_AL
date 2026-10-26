@@ -1,0 +1,38 @@
+{
+  "workspace": "C:\\Users\\user\\OneDrive - postech.ac.kr\\바탕 화면\\REE_AL",
+  "archive": "C:\\Users\\user\\OneDrive - postech.ac.kr\\바탕 화면\\REE_AL_archive\\20261022_cleanup",
+  "archived_top_level": [
+    "best_model",
+    "audit",
+    "outputs",
+    "rare_earth_steel_single_sheet_sources.xlsx"
+  ],
+  "retained_model": "models/svr.joblib",
+  "model_predictions_preserved": true,
+  "csv_git_policy": "all CSV ignored",
+  "status": "complete",
+  "retained_folders": [
+    "corrosion_ml",
+    "models",
+    "data",
+    "results",
+    "docs",
+    "tests"
+  ],
+  "pending_files": [],
+  "locked_file_backup_verified": true,
+  "model_files": [
+    "models\\svr.joblib"
+  ],
+  "validation": {
+    "unit_tests": 17,
+    "training_rows": 279,
+    "max_prediction_difference": 0.0,
+    "uncertainty_preserved": true,
+    "clean_process_prediction": true,
+    "clean_process_al_recommend": true,
+    "clean_process_external_validation": true,
+    "mean_random_test_r2_log10": 0.817788259540819
+  },
+  "closed_workbook_archive": "composition_estimated_closed_20261022_190618.xlsx"
+}

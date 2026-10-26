@@ -1,0 +1,70 @@
+{
+  "doi": "10.1016/j.prostr.2025.08.043",
+  "title": "Effect of Aging Duration on the Microstructure and Corrosion Characteristics of 17-4 PH Stainless Steel",
+  "selection": "New paper not in operating training or expanded 385-row corpus; tabulated bulk composition, aging temperature/time, and Tafel means.",
+  "primary_conditions": "All four reported ST+aging conditions: 480 C, 1/4/8/32 h",
+  "secondary": "As-received control, no thermal pair; never fabricate 0 C/0 min",
+  "model_sha256": "716884026724c425e9c003f9517497aaf116c98f6ceed2e23df8250c744ef4f4",
+  "model_training_rows": 279,
+  "no_retraining": true,
+  "no_tuning": true,
+  "no_new_source_donors": true,
+  "missing_policy": "Unreported N, RE, pH, test temperature, exposure left missing. Apply only saved training-fitted transforms.",
+  "evaluation": "Retrospective external-paper evaluation, not blinded prospective experiment",
+  "source_urls": [
+    "https://fis.cld.bz/Issue-711/109/",
+    "https://fis.cld.bz/Issue-711/110/",
+    "https://fis.cld.bz/Issue-711/111/",
+    "https://fis.cld.bz/Issue-711/115/"
+  ],
+  "primary": {
+    "n": 4,
+    "r2_log10": -23.515648356933557,
+    "r2_A_cm2": -189.9044099729876,
+    "rmse_log10": 0.9805340876565505,
+    "mae_log10": 0.9603277602313363,
+    "mae_A_cm2": 1.389338994542408e-06,
+    "geometric_mean_fold_error": 9.126993899171103,
+    "median_fold_error": 10.80889881028628,
+    "fraction_within_factor2": 0.0,
+    "r2_note": "Null if fewer than 2 records or constant observed values; small or narrow-range experiments give unstable R2"
+  },
+  "all_five_secondary": {
+    "n": 5,
+    "r2_log10": -19.156603857617842,
+    "r2_A_cm2": -188.2311236815528,
+    "rmse_log10": 0.9443328385232782,
+    "mae_log10": 0.9248552043683343,
+    "mae_A_cm2": 1.449330359107539e-06,
+    "geometric_mean_fold_error": 8.41114663676973,
+    "median_fold_error": 9.176210860616496,
+    "fraction_within_factor2": 0.0,
+    "r2_note": "Null if fewer than 2 records or constant observed values; small or narrow-range experiments give unstable R2"
+  },
+  "target_span_factor": 3.226348364279399,
+  "unreported_fields": [
+    "N",
+    "RE_ppm",
+    "pH",
+    "temperature_C",
+    "exposure_h",
+    "RE_element_cat"
+  ],
+  "unreported_categorical_fields": [
+    "sample_process_cat",
+    "sample_region_cat",
+    "temperature_condition_cat"
+  ],
+  "process_category_note": "Heat history documented numerically; no asserted mapping of combined solution-plus-aging route to an existing category.",
+  "Cr_linewrap_note": "Primary Table 1 text wraps 15.398 into 15.39 + 8; both numeric interpretations evaluated as sensitivity, no choice by score.",
+  "max_log10_prediction_change_Cr_15_398_vs_15_39": 7.32184940588354e-06,
+  "max_RBF_similarity_to_training_support_vectors": [
+    1.2247122381219508e-42,
+    4.416436059973833e-43,
+    6.566886928281285e-48,
+    8.61115522384184e-176,
+    0.09427889402062116
+  ],
+  "central_SVR_intercept_log10": -5.800295823937926,
+  "aged_predictions_equal_intercept": true
+}

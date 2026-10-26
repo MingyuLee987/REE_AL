@@ -1,0 +1,70 @@
+{
+  "external_doi": "10.1016/j.prostr.2025.08.043",
+  "evaluation": "Retrospective unseen-paper validation; not a prospective new experiment",
+  "source_sha256": "6d2c1530cca3beba20ec4c68fa5c940e0abd27dd7c7e810c1dadf91548f5418f",
+  "primary": "Four 480 C aging conditions; AR secondary",
+  "model_settings": "Existing SVR C=10 epsilon=0.15 gamma=scale; no tuning using external outcomes",
+  "missing_policy": "Unreported values remain missing; preprocessing fitted on training corpus only",
+  "external_used_in_fit": false,
+  "production_model_replaced": false,
+  "models": {
+    "expanded_verified_377": {
+      "n_train": 377,
+      "n_papers": 65,
+      "primary": {
+        "n": 4,
+        "r2_log10": -19.853346856774774,
+        "r2_A_cm2": -143.79728236672617,
+        "rmse_log10": 0.9043340600628171,
+        "mae_log10": 0.8894074087346859,
+        "mae_A_cm2": 1.1867743514208437e-06,
+        "geometric_mean_fold_error": 7.7518865608719985,
+        "median_fold_error": 8.419035531971966,
+        "fraction_within_factor2": 0.0,
+        "r2_note": "Null if fewer than 2 records or constant observed values; small or narrow-range experiments give unstable R2"
+      },
+      "secondary_all_five": {
+        "n": 5,
+        "r2_log10": -22.20474196070871,
+        "r2_A_cm2": -1075.7833383027835,
+        "rmse_log10": 1.0132224027020378,
+        "mae_log10": 0.9844228172542122,
+        "mae_A_cm2": 2.426144977377594e-06,
+        "geometric_mean_fold_error": 9.647678381831707,
+        "median_fold_error": 11.214144532228655,
+        "fraction_within_factor2": 0.0,
+        "r2_note": "Null if fewer than 2 records or constant observed values; small or narrow-range experiments give unstable R2"
+      },
+      "model_sha256": "514481d5544cf4cb28eed9b9125266e3d4e29ce8ecb1882c5003be498c608209"
+    },
+    "expanded_thermal_342": {
+      "n_train": 342,
+      "n_papers": 55,
+      "primary": {
+        "n": 4,
+        "r2_log10": -28.72763560202936,
+        "r2_A_cm2": -355.42742091418495,
+        "rmse_log10": 1.0797449685194938,
+        "mae_log10": 1.0668988302557223,
+        "mae_A_cm2": 1.8712787451622344e-06,
+        "geometric_mean_fold_error": 11.665378381481238,
+        "median_fold_error": 12.874384929577595,
+        "fraction_within_factor2": 0.0,
+        "r2_note": "Null if fewer than 2 records or constant observed values; small or narrow-range experiments give unstable R2"
+      },
+      "secondary_all_five": {
+        "n": 5,
+        "r2_log10": -22.137243730689782,
+        "r2_A_cm2": -284.81401709734155,
+        "rmse_log10": 1.0117476928062452,
+        "mae_log10": 0.9883923649458517,
+        "mae_A_cm2": 1.745380381825482e-06,
+        "geometric_mean_fold_error": 9.736264529430613,
+        "median_fold_error": 8.792882173420503,
+        "fraction_within_factor2": 0.0,
+        "r2_note": "Null if fewer than 2 records or constant observed values; small or narrow-range experiments give unstable R2"
+      },
+      "model_sha256": "66b69a5150d04354e875a77123da4d5a64a3debe42d213b688df59cf748b7cdf"
+    }
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "date": "2026-10-23",
+  "screened_labelled_rows": 45,
+  "source_papers": 12,
+  "core_complete_rows": 11,
+  "core_complete_papers": 2,
+  "source_only_core_complete_rows": 0,
+  "ree_core_complete_rows": 0,
+  "detailed_protocol_complete_rows": 0,
+  "composition_complete_rows": 29,
+  "statistically_imputed_cells": 104,
+  "source_attribute_records": 961,
+  "missingness": [
+    {
+      "field": "C",
+      "raw_missing": 19,
+      "prepared_missing": 0,
+      "raw_missing_pct": 42.22,
+      "prepared_missing_pct": 0.0
+    },
+    {
+      "field": "Si",
+      "raw_missing": 15,
+      "prepared_missing": 0,
+      "raw_missing_pct": 33.33,
+      "prepared_missing_pct": 0.0
+    },
+    {
+      "field": "Mn",
+      "raw_missing": 15,
+      "prepared_missing": 0,
+      "raw_missing_pct": 33.33,
+      "prepared_missing_pct": 0.0
+    },
+    {
+      "field": "P",
+      "raw_missing": 24,
+      "prepared_missing": 0,
+      "raw_missing_pct": 53.33,
+      "prepared_missing_pct": 0.0
+    },
+    {
+      "field": "S",
+      "raw_missing": 24,
+      "prepared_missing": 0,
+      "raw_missing_pct": 53.33,
+      "prepared_missing_pct": 0.0
+    },
+    {
+      "field": "Cr",
+      "raw_missing": 0,
+      "prepared_missing": 0,
+      "raw_missing_pct": 0.0,
+      "prepared_missing_pct": 0.0
+    },
+    {
+      "field": "Ni",
+      "raw_missing": 6,
+      "prepared_missing": 0,
+      "raw_missing_pct": 13.33,
+      "prepared_missing_pct": 0.0
+    },
+    {
+      "field": "Mo",
+      "raw_missing": 8,
+      "prepared_missing": 0,
+      "raw_missing_pct": 17.78,
+      "prepared_missing_pct": 0.0
+    },
+    {
+      "field": "Cu",
+      "raw_missing": 19,
+      "prepared_missing": 0,
+      "raw_missing_pct": 42.22,
+      "prepared_missing_pct": 0.0
+    },
+    {
+      "field": "N",
+      "raw_missing": 34,
+      "prepared_missing": 16,
+      "raw_missing_pct": 75.56,
+      "prepared_missing_pct": 35.56
+    },
+    {
+      "field": "grain_size_um",
+      "raw_missing": 2,
+      "prepared_missing": 2,
+      "raw_missing_pct": 4.44,
+      "prepared_missing_pct": 4.44
+    },
+    {
+      "field": "grain_size_ASTM_number",
+      "raw_missing": 43,
+      "prepared_missing": 43,
+      "raw_missing_pct": 95.56,
+      "prepared_missing_pct": 95.56
+    },
+    {
+      "field": "temperature_C",
+      "raw_missing": 35,
+      "prepared_missing": 35,
+      "raw_missing_pct": 77.78,
+      "prepared_missing_pct": 77.78
+    },
+    {
+      "field": "pH",
+      "raw_missing": 39,
+      "prepared_missing": 39,
+      "raw_missing_pct": 86.67,
+      "prepared_missing_pct": 86.67
+    },
+    {
+      "field": "exposure_h",
+      "raw_missing": 34,
+      "prepared_missing": 34,
+      "raw_missing_pct": 75.56,
+      "prepared_missing_pct": 75.56
+    },
+    {
+      "field": "scan_rate_mV_s",
+      "raw_missing": 6,
+      "prepared_missing": 6,
+      "raw_missing_pct": 13.33,
+      "prepared_missing_pct": 13.33
+    },
+    {
+      "field": "ocp_stabilization_min",
+      "raw_missing": 19,
+      "prepared_missing": 19,
+      "raw_missing_pct": 42.22,
+      "prepared_missing_pct": 42.22
+    },
+    {
+      "field": "heat_treatment_temperature_C",
+      "raw_missing": 19,
+      "prepared_missing": 19,
+      "raw_missing_pct": 42.22,
+      "prepared_missing_pct": 42.22
+    },
+    {
+      "field": "heat_treatment_time_min",
+      "raw_missing": 19,
+      "prepared_missing": 19,
+      "raw_missing_pct": 42.22,
+      "prepared_missing_pct": 42.22
+    },
+    {
+      "field": "RE_ppm",
+      "raw_missing": 32,
+      "prepared_missing": 32,
+      "raw_missing_pct": 71.11,
+      "prepared_missing_pct": 71.11
+    }
+  ],
+  "fold_checks": [
+    {
+      "fold": 0,
+      "train_rows": 36,
+      "test_rows": 9,
+      "train_core_complete": 5,
+      "test_core_complete": 6,
+      "held_out_papers": [
+        "10.3390/ma12091455",
+        "10.3390/ma18081823"
+      ],
+      "held_out_paper_used_as_donor": false
+    },
+    {
+      "fold": 1,
+      "train_rows": 35,
+      "test_rows": 10,
+      "train_core_complete": 11,
+      "test_core_complete": 0,
+      "held_out_papers": [
+        "10.1016/j.isci.2025.113319",
+        "10.3390/met13010066",
+        "source:Vera2015_IJES_6187"
+      ],
+      "held_out_paper_used_as_donor": false
+    },
+    {
+      "fold": 2,
+      "train_rows": 35,
+      "test_rows": 10,
+      "train_core_complete": 6,
+      "test_core_complete": 5,
+      "held_out_papers": [
+        "10.1002/srin.202400576",
+        "10.3390/ma15248780",
+        "10.3390/ma19122685"
+      ],
+      "held_out_paper_used_as_donor": false
+    },
+    {
+      "fold": 3,
+      "train_rows": 37,
+      "test_rows": 8,
+      "train_core_complete": 11,
+      "test_core_complete": 0,
+      "held_out_papers": [
+        "10.1038/s41598-026-65428-1",
+        "10.3390/ma18122722"
+      ],
+      "held_out_paper_used_as_donor": false
+    },
+    {
+      "fold": 4,
+      "train_rows": 37,
+      "test_rows": 8,
+      "train_core_complete": 11,
+      "test_core_complete": 0,
+      "held_out_papers": [
+        "10.1007/s10853-025-11514-0",
+        "10.1186/s40712-025-00240-9"
+      ],
+      "held_out_paper_used_as_donor": false
+    }
+  ],
+  "source_rejected_papers": [
+    {
+      "doi": "10.3390/met10091174",
+      "reason": "Reports grain size/composition but only gravimetric corrosion target; no measured i_corr"
+    }
+  ],
+  "training_target_never_imputed": true,
+  "imputation_reference_includes_legacy_source_compositions": true,
+  "model_retrained": false,
+  "original_training_unchanged": true,
+  "independent_AL_benchmark_ready": false,
+  "limitations": [
+    "Core-complete is defined by the specified predictor schema, not all conceivable experimental details",
+    "pH/exposure/OCP unknowns are never fabricated",
+    "ASTM grain number remains separate from diameter",
+    "Nominal/proxy/statistical composition is not measured chemistry",
+    "Global prepared CSV is review-only; use train-fold imputation for independent evaluation",
+    "All rows already have literature labels; new experimental AL requires a genuinely unmeasured feasible candidate pool",
+    "Core subset contains only two source papers; not enough for a convincing multi-paper AL benchmark"
+  ]
+}

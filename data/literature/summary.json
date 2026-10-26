@@ -1,0 +1,18 @@
+{
+  "checked_measurements": 503,
+  "rebar_author_measurements": 216,
+  "hku_raw_measurements": 275,
+  "reviewed_alloy_examples": 12,
+  "transformed_hku_not_merged": 535,
+  "machine_candidates": 4648,
+  "candidate_papers": 456,
+  "candidate_known_units": 4108,
+  "existing_training_paper_candidates": 19,
+  "training_data_changed": false,
+  "important": "Checked records include environmental-only data, partial compositions and interval representatives; not all immediately usable in existing alloy model. No unspecified RE content filled with zero; transformed and overlapping datasets not merged.",
+  "metadata_records": 4050,
+  "fulltext_papers": 880,
+  "fulltexts_with_icorr_tables": 524,
+  "source_group_policy": "HKU chapters share one group; repeated measurements stay with original paper",
+  "fulltext_papers_with_doi": 879
+}

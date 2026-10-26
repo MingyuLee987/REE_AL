@@ -1,0 +1,12 @@
+{
+  "paired_measurements": 21,
+  "distinct_material_conditions": 16,
+  "papers": 4,
+  "method_counts": {
+    "Tafel_polarization": 16,
+    "LPR": 5
+  },
+  "duplicates_policy": "LPR/Tafel separated; AT12 repeat of T120 excluded",
+  "not_merged_into_training": true,
+  "grain_values_not_imputed": true
+}

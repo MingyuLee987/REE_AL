@@ -1,0 +1,10 @@
+{
+  "unique_record_ids": true,
+  "previous_344_targets_preserved": true,
+  "previous_pH_values_preserved": true,
+  "new_rows_all_positive_RE": true,
+  "all_added_targets_source_linked": true,
+  "known_thermal_rows": 321,
+  "thermal_and_target_not_imputed": true,
+  "production_hashes_unchanged": true
+}

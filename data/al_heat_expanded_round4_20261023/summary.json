@@ -1,0 +1,62 @@
+{
+  "original_rows": 45,
+  "added_rows": 291,
+  "expanded_rows": 336,
+  "expanded_papers": 57,
+  "new_papers": 45,
+  "screened_new_papers": 102,
+  "checked_target_and_heat_rows": 317,
+  "core_conditions_complete_review_rows": 97,
+  "core_conditions_complete_papers": 14,
+  "all_selected_predictors_present_rows": 0,
+  "missing_temperature_time_rows": 19,
+  "missing_temperature_time_pct": 5.65,
+  "legacy_unverified_targets": 8,
+  "statistically_imputed_cells": 958,
+  "fold_checks": [
+    {
+      "fold": 0,
+      "held_out_papers": 9,
+      "test_rows": 68,
+      "no_held_out_donors": true
+    },
+    {
+      "fold": 1,
+      "held_out_papers": 12,
+      "test_rows": 67,
+      "no_held_out_donors": true
+    },
+    {
+      "fold": 2,
+      "held_out_papers": 12,
+      "test_rows": 67,
+      "no_held_out_donors": true
+    },
+    {
+      "fold": 3,
+      "held_out_papers": 12,
+      "test_rows": 67,
+      "no_held_out_donors": true
+    },
+    {
+      "fold": 4,
+      "held_out_papers": 12,
+      "test_rows": 67,
+      "no_held_out_donors": true
+    }
+  ],
+  "model_retrained": false,
+  "source_target_never_imputed": true,
+  "test_temperature_information_missing_rows": 65,
+  "new_rows_with_explicit_positive_RE_ppm": 16,
+  "previous_expanded_rows": 237,
+  "added_this_round_rows": 99,
+  "added_this_round_papers": 11,
+  "added_this_round_positive_RE_rows": 14,
+  "previous_targets_preserved": true,
+  "checked_rows_goal_300_met": true,
+  "api_credit_balance_exhausted": true,
+  "direct_primary_review_rows": 62,
+  "added_Ce_positive_rows": 12,
+  "added_La_positive_rows": 2
+}

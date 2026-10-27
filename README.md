@@ -32,3 +32,9 @@ python -m corrosion_ml predict --data data/templates/candidates.csv
 - `data/al_expanded_20261024/expanded_source_only.csv`: 복구한 원본 385행. 출처와 검토 정보를 보존합니다.
 
 377행은 icorr 확인 기준이며 희토류·단계별 열처리·환경 입력이 모두 완비된 뜻은 아닙니다. 현재 저장 모델은 여전히 기존 279행 학습본입니다. 데이터 복구만 수행했으며 377행 재학습이나 모델 교체는 하지 않았습니다.
+
+## 조성 정보를 보존한 수정 DB
+
+`data/composition_revised_20261026/database_377.csv`에 조성 보고값·상하한·보고 형태·근거를 분리했습니다. 추가 원소와 원문 상한 복구 이력도 같은 폴더에 있습니다. 이 DB의 모든 값이 실측 조성이라는 뜻은 아니며 basis를 확인해야 합니다.
+
+동일 분할의 비교에서는 무작위 예측 성능이 개선되지 않아 운영 모델을 교체하지 않았습니다. 결과와 참고논문은 `results/composition_revised_20261026/REPORT.md`에 있습니다.

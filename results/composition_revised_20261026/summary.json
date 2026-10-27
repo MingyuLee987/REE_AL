@@ -1,0 +1,128 @@
+{
+  "configs": [
+    [
+      "legacy",
+      10,
+      "all"
+    ],
+    [
+      "structured",
+      1,
+      "all"
+    ],
+    [
+      "structured",
+      10,
+      "all"
+    ],
+    [
+      "structured",
+      100,
+      "all"
+    ],
+    [
+      "structured",
+      10,
+      40
+    ],
+    [
+      "structured",
+      10,
+      80
+    ]
+  ],
+  "results": [
+    {
+      "protocol": "paper_5fold",
+      "model": "inner_selected",
+      "min_features": 40,
+      "max_features": 287,
+      "mean_fold_r2": -0.3123448587148691,
+      "n": 377,
+      "r2_log10": -0.25111269464025954,
+      "mae_log10": 1.105777326301735,
+      "rmse_log10": 1.4126500334829688,
+      "geometric_mean_fold_error": 12.75784514297614,
+      "fraction_within_factor2": 0.1909814323607427,
+      "r2_raw": -0.028072598319824005
+    },
+    {
+      "protocol": "paper_5fold",
+      "model": "legacy",
+      "min_features": 166,
+      "max_features": 177,
+      "mean_fold_r2": -0.1301164471908126,
+      "n": 377,
+      "r2_log10": -0.024725657479414354,
+      "mae_log10": 1.044242269499111,
+      "rmse_log10": 1.2784689178311663,
+      "geometric_mean_fold_error": 11.07241281999255,
+      "fraction_within_factor2": 0.16710875331564987,
+      "r2_raw": -0.03295975782362137
+    },
+    {
+      "protocol": "paper_5fold",
+      "model": "structured_fixed",
+      "min_features": 241,
+      "max_features": 296,
+      "mean_fold_r2": -0.1509176102662039,
+      "n": 377,
+      "r2_log10": 0.008925490990463913,
+      "mae_log10": 1.0152285014831648,
+      "rmse_log10": 1.2573017548656615,
+      "geometric_mean_fold_error": 10.356869439352815,
+      "fraction_within_factor2": 0.19363395225464192,
+      "r2_raw": -0.029360694871534587
+    },
+    {
+      "protocol": "random_5fold",
+      "model": "inner_selected",
+      "min_features": 80,
+      "max_features": 299,
+      "mean_fold_r2": 0.69825239079724,
+      "n": 377,
+      "r2_log10": 0.7027966303748729,
+      "mae_log10": 0.4148772504306986,
+      "rmse_log10": 0.6885147257406993,
+      "geometric_mean_fold_error": 2.5994247544607165,
+      "fraction_within_factor2": 0.583554376657825,
+      "r2_raw": 0.4828228296851199
+    },
+    {
+      "protocol": "random_5fold",
+      "model": "legacy",
+      "min_features": 176,
+      "max_features": 180,
+      "mean_fold_r2": 0.7556949563559118,
+      "n": 377,
+      "r2_log10": 0.75654691695864,
+      "mae_log10": 0.3895781972375276,
+      "rmse_log10": 0.6231520213335495,
+      "geometric_mean_fold_error": 2.4523259695578203,
+      "fraction_within_factor2": 0.596816976127321,
+      "r2_raw": 0.4390567406516268
+    },
+    {
+      "protocol": "random_5fold",
+      "model": "structured_fixed",
+      "min_features": 284,
+      "max_features": 299,
+      "mean_fold_r2": 0.7224096717543251,
+      "n": 377,
+      "r2_log10": 0.7239313518173708,
+      "mae_log10": 0.4207587715240747,
+      "rmse_log10": 0.6635824828341855,
+      "geometric_mean_fold_error": 2.634867444559205,
+      "fraction_within_factor2": 0.5994694960212201,
+      "r2_raw": 0.3461281229830766
+    }
+  ],
+  "final_config": [
+    "structured",
+    100,
+    "all"
+  ],
+  "final_features": 301,
+  "production_model_changed": false,
+  "interpretation": "Bounds representation is project-specific engineering, not a published recipe. Previously examined development data; not blind validation. Both reporting pattern and domain shift can affect results."
+}

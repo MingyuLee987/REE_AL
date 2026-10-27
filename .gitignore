@@ -4,3 +4,17 @@ __pycache__/
 outputs/
 *.[cC][sS][vV]
 .env
+
+# Images
+*.[pP][nN][gG]
+*.[jJ][pP][gG]
+*.[jJ][pP][eE][gG]
+*.[gG][iI][fF]
+*.[wW][eE][bB][pP]
+*.[bB][mM][pP]
+*.[tT][iI][fF]
+*.[tT][iI][fF][fF]
+*.[sS][vV][gG]
+*.[iI][cC][oO]
+*.[hH][eE][iI][cC]
+*.[aA][vV][iI][fF]
